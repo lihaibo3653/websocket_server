@@ -13,7 +13,7 @@ class WebSocket(tornado.websocket.WebSocketHandler):
     def on_close(self):
         print("on websocket close")
 
-    def check_orgin(self,orgin):
+    def check_origin(self,orgin):
         return True
 
 
@@ -27,6 +27,7 @@ settings = {
 app = tornado.web.Application(patterns,**settings);
 app.listen(7000,xheaders = True)
 
+print("server listen on 7000");
+
 tornado.ioloop.IOLoop.current().start()
 
-print("server listen on 7000");

@@ -28,3 +28,5 @@ app = tornado.web.Application(patterns,**settings);
 app.listen(7000,xheaders = True)
 
 tornado.ioloop.IOLoop.current().start()
+
+print("server listen on 7000");

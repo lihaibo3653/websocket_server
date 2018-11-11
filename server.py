@@ -25,6 +25,6 @@ settings = {
     "debug":True
 }
 app = tornado.web.Application(patterns,**settings);
-app.listern(7000,xheaders = True)
+app.listen(7000,xheaders = True)
 
 tornado.ioloop.IOLoop.current().start()
